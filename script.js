@@ -41,7 +41,7 @@ function displayPonyo() {
 
 function displayMad() {
     document.getElementById('no-button').innerText = 'TEST';
-    document.getElementById('image-container').innerHTML = '';
+    //document.getElementById('image-container').innerHTML = '';
     var imageContainer = document.getElementById('image-container');
     var PonyoMad = new Image();
     PonyoMad.src = 'PonyoMad.gif';
