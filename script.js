@@ -48,10 +48,12 @@ function displayMad() {
     PonyoMad.src = 'PonyoMad.gif';
     PonyoMad.alt = 'Ponyo Mad';
     PonyoMad.onload = function() {
-        document.getElementById('no-button').innerText = 'TEST8';
+        document.getElementById('no-button').innerText = 'TEST9';
         if (timer == 1) {
         imageContainer.appendChild(PonyoMad);
         imageContainer.removeChild(PonyoStand);
+        } else {
+            imageContainer.appendChild(PonyoMad);
         }
 //        document.getElementById('options').style.display = 'none';
     };
