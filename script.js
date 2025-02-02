@@ -1,3 +1,4 @@
+var timer = 0;
 
 function selectOption(option) {
     if (option === 'yes') {
@@ -6,7 +7,8 @@ function selectOption(option) {
     } else if (option === 'no') {
         displayMad();
         // Change text on the "No" button to "You sure?"
-       // document.getElementById('no-button').innerText = 'TEST'; 
+       // document.getElementById('no-button').innerText = 'TEST';
+        timer = timer + 1; 
         var yesButton = document.getElementById('yes-button');
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
         var newSize = parseFloat(currentFontSize) * 1.1;
@@ -46,9 +48,11 @@ function displayMad() {
     PonyoMad.src = 'PonyoMad.gif';
     PonyoMad.alt = 'Ponyo Mad';
     PonyoMad.onload = function() {
-        document.getElementById('no-button').innerText = 'TEST6';
+        document.getElementById('no-button').innerText = 'TEST7';
+        if (timer == 0) {
         imageContainer.appendChild(PonyoMad);
         imageContainer.removeChild(PonyoStand);
+        }
 //        document.getElementById('options').style.display = 'none';
     };
 }
