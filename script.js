@@ -48,7 +48,7 @@ function displayMad() {
     PonyoMad.src = 'PonyoMad.gif';
     PonyoMad.alt = 'Ponyo Mad';
     PonyoMad.onload = function() {
-        document.getElementById('no-button').innerText = 'TEST7';
+        document.getElementById('no-button').innerText = 'TEST8';
         if (timer == 1) {
         imageContainer.appendChild(PonyoMad);
         imageContainer.removeChild(PonyoStand);
