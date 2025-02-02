@@ -48,7 +48,7 @@ function displayMad() {
     PonyoMad.alt = 'Ponyo Mad';
     PonyoMad.onload = function() {
         imageContainer.appendChild(PonyoMad);
-        document.getElementById('options').style.display = 'none';
+//        document.getElementById('options').style.display = 'none';
     };
 }
 /*
