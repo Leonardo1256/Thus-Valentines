@@ -6,7 +6,7 @@ function selectOption(option) {
     } else if (option === 'no') {
         displayMad();
         // Change text on the "No" button to "You sure?"
-        // document.getElementById('no-button').innerText = 'You sure?'; 
+        document.getElementById('no-button').innerText = 'You sure?'; 
         var yesButton = document.getElementById('yes-button');
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
         var newSize = parseFloat(currentFontSize) * 1.1;
