@@ -40,7 +40,7 @@ function displayPonyo() {
 }
 
 function displayMad() {
-    document.getElementById('no-button').innerText = 'TEST';
+    document.getElementById('no-button').innerText = 'TEST1';
     //document.getElementById('image-container').innerHTML = '';
     var imageContainer = document.getElementById('image-container');
     var PonyoMad = new Image();
