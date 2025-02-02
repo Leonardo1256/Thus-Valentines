@@ -40,13 +40,25 @@ function displayPonyo() {
 }
 
 function displayMad() {
+    document.getElementById('image-container').innerHTML = '';
     var imageContainer = document.getElementById('image-container');
     var PonyoMad = new Image();
     PonyoMad.src = 'PonyoMad.gif';
-    PonyoMad.alt = 'Mad';
+    PonyoMad.alt = 'Ponyo Mad';
     PonyoMad.onload = function() {
         imageContainer.appendChild(PonyoMad);
+        document.getElementById('options').style.display = 'none';
     };
 }
+
+//function displayMad() {
+//    var imageContainer = document.getElementById('image-container');
+//    var PonyoMad = new Image();
+//    PonyoMad.src = 'PonyoMad.gif';
+//    PonyoMad.alt = 'Mad';
+//    PonyoMad.onload = function() {
+//        imageContainer.appendChild(PonyoMad);
+//    };
+//}
 
 displayStand();
