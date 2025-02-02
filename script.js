@@ -49,7 +49,7 @@ function displayMad() {
     PonyoMad.alt = 'Ponyo Mad';
     PonyoMad.onload = function() {
         document.getElementById('no-button').innerText = 'TEST7';
-        if (timer == 0) {
+        if (timer == 1) {
         imageContainer.appendChild(PonyoMad);
         imageContainer.removeChild(PonyoStand);
         }
