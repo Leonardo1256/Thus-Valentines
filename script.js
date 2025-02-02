@@ -9,7 +9,7 @@ function selectOption(option) {
         // document.getElementById('no-button').innerText = 'You sure?'; 
         var yesButton = document.getElementById('yes-button');
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
-        var newSize = parseFloat(currentFontSize) * 1.25;
+        var newSize = parseFloat(currentFontSize) * 1.1;
         yesButton.style.fontSize = newSize + 'px';
     } else {
         // If neither "Yes" nor "No" was clicked, show an alert message
@@ -40,14 +40,12 @@ function displayPonyo() {
 }
 
 function displayMad() {
-    document.getElementById('image-container').innerHTML = '';
     var imageContainer = document.getElementById('image-container');
     var PonyoMad = new Image();
     PonyoMad.src = 'PonyoMad.gif';
-    PonyoMad.alt = 'Ponyo Mad';
+    PonyoMad.alt = 'Mad';
     PonyoMad.onload = function() {
         imageContainer.appendChild(PonyoMad);
-        document.getElementById('options').style.display = 'none';
     };
 }
 
