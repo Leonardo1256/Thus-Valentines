@@ -40,13 +40,13 @@ function displayPonyo() {
 }
 
 function displayMad() {
-    //document.getElementById('image-container').innerHTML = '';
-    // var imageContainer = document.getElementById('image-container');
+    document.getElementById('image-container').innerHTML = '';
+    var imageContainer = document.getElementById('image-container');
     var PonyoMad = new Image();
     PonyoMad.src = 'PonyoMad.gif';
     PonyoMad.alt = 'Ponyo Mad';
     PonyoMad.onload = function() {
-        document.getElementById('no-button').innerText = 'TEST5';
+        document.getElementById('no-button').innerText = 'TEST6';
         imageContainer.appendChild(PonyoMad);
         imageContainer.removeChild(PonyoStand);
 //        document.getElementById('options').style.display = 'none';
