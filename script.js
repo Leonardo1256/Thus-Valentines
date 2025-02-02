@@ -1,5 +1,4 @@
 var timer = 0;
-var imageContainer = document.getElementById('image-container');
 
 function selectOption(option) {
     if (option === 'yes') {
@@ -21,6 +20,7 @@ function selectOption(option) {
 }
 
 function displayStand() {
+    var imageContainer = document.getElementById('image-container');
     var PonyoStand = new Image();
     PonyoStand.src = 'PonyoStand.gif';
     PonyoStand.alt = 'Stand';
@@ -31,7 +31,7 @@ function displayStand() {
 
 function displayPonyo() {
     document.getElementById('image-container').innerHTML = '';
-    // var imageContainer = document.getElementById('image-container');
+    var imageContainer = document.getElementById('image-container');
     var PonyoKiss = new Image();
     PonyoKiss.src = 'PonyoKiss.gif';
     PonyoKiss.alt = 'Ponyo Kiss';
@@ -42,16 +42,16 @@ function displayPonyo() {
 }
 
 function displayMad() {
+    document.getElementById('image-container').innerHTML = '';
+    var imageContainer = document.getElementById('image-container');
     var PonyoMad = new Image();
     PonyoMad.src = 'PonyoMad.gif';
     PonyoMad.alt = 'Ponyo Mad';
     PonyoMad.onload = function() {
-        document.getElementById('no-button').innerText = 'TEST10';
+        document.getElementById('no-button').innerText = 'TEST8';
         if (timer == 1) {
         imageContainer.appendChild(PonyoMad);
         imageContainer.removeChild(PonyoStand);
-        } else {
-            imageContainer.appendChild(PonyoMad);
         }
 //        document.getElementById('options').style.display = 'none';
     };
