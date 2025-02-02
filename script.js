@@ -1,4 +1,5 @@
 var timer = 0;
+var imageContainer = document.getElementById('image-container');
 
 function selectOption(option) {
     if (option === 'yes') {
@@ -45,7 +46,7 @@ function displayMad() {
     PonyoMad.src = 'PonyoMad.gif';
     PonyoMad.alt = 'Ponyo Mad';
     PonyoMad.onload = function() {
-        document.getElementById('no-button').innerText = 'TEST9';
+        document.getElementById('no-button').innerText = 'TEST10';
         if (timer == 1) {
         imageContainer.appendChild(PonyoMad);
         imageContainer.removeChild(PonyoStand);
