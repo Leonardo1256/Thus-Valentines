@@ -4,7 +4,7 @@ function selectOption(option) {
         document.getElementById('question').style.display = 'none';
         displayPonyo();
     } else if (option === 'no') {
-        displayMad();
+        // displayMad();
         // Change text on the "No" button to "You sure?"
         document.getElementById('no-button').innerText = 'You sure?'; 
         var yesButton = document.getElementById('yes-button');
@@ -39,7 +39,7 @@ function displayPonyo() {
     };
 }
 
-function displayMad() {
+/* function displayMad() {
     document.getElementById('image-container').innerHTML = '';
     var imageContainer = document.getElementById('image-container');
     var PonyoMad = new Image();
@@ -60,5 +60,6 @@ function displayMad() {
 //        imageContainer.appendChild(PonyoMad);
 //    };
 //}
+*/
 
 displayStand();
