@@ -4,9 +4,9 @@ function selectOption(option) {
         document.getElementById('question').style.display = 'none';
         displayPonyo();
     } else if (option === 'no') {
-        // displayMad();
+        displayMad();
         // Change text on the "No" button to "You sure?"
-        document.getElementById('no-button').innerText = 'You sure?'; 
+       // document.getElementById('no-button').innerText = 'TEST'; 
         var yesButton = document.getElementById('yes-button');
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
         var newSize = parseFloat(currentFontSize) * 1.1;
@@ -39,7 +39,8 @@ function displayPonyo() {
     };
 }
 
-/* function displayMad() {
+function displayMad() {
+    document.getElementById('no-button').innerText = 'TEST';
     document.getElementById('image-container').innerHTML = '';
     var imageContainer = document.getElementById('image-container');
     var PonyoMad = new Image();
@@ -50,16 +51,16 @@ function displayPonyo() {
         document.getElementById('options').style.display = 'none';
     };
 }
-
-//function displayMad() {
-//    var imageContainer = document.getElementById('image-container');
-//    var PonyoMad = new Image();
-//    PonyoMad.src = 'PonyoMad.gif';
-//    PonyoMad.alt = 'Mad';
-//    PonyoMad.onload = function() {
-//        imageContainer.appendChild(PonyoMad);
-//    };
-//}
+/*
+function displayMad() {
+    var imageContainer = document.getElementById('image-container');
+    var PonyoMad = new Image();
+    PonyoMad.src = 'PonyoMad.gif';
+    PonyoMad.alt = 'Mad';
+    PonyoMad.onload = function() {
+        imageContainer.appendChild(PonyoMad);
+    };
+}
 */
 
 displayStand();
