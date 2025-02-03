@@ -11,7 +11,8 @@ let index = 0;
 
 function selectOption(option) {
     if (option === 'yes') {
-        document.getElementById('question').style.display = 'hehe <3';
+        document.getElementById('question').innerText = 'hehe <3';
+        // document.getElementById('no-button').innerText = 'You sure?'; 
         displayPonyo();
     } else if (option === 'no') {
         displayMad();

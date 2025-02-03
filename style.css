@@ -34,5 +34,6 @@ button {
     background-color: #f74a29; /* Set button background color */
     color: white; /* Set text color to white */
     border: none; /* Remove button border */
+    border-radius: 50%;
     cursor: pointer; /* Set cursor to pointer on hover */
 }
