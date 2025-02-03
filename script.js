@@ -12,13 +12,21 @@ let index = 0;
 function selectOption(option) {
     if (option === 'yes') {
         document.getElementById('question').innerText = 'hehe <3';
-        // document.getElementById('no-button').innerText = 'You sure?'; 
         displayPonyo();
     } else if (option === 'no') {
         displayMad();
         document.getElementById('no-button').addEventListener('click', function() {
             index = (index + 1) % phrases.length;
             this.innerText = phrases[index];
+
+            const maxX = window.innerWidth - this.offsetWidth;
+            const maxY = window.innerHeight - this.offsetHeight;
+            const randomX = Math.random() * maxX;
+            const randomY = Math.random() * maxY;
+        
+            this.style.position = 'absolute';
+            this.style.left = `${randomX}px`;
+            this.style.top = `${randomY}px`;
         });
         timer = timer + 1; 
         var yesButton = document.getElementById('yes-button');
