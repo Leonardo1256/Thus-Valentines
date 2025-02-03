@@ -28,11 +28,19 @@ function selectOption(option) {
             this.style.left = `${randomX}px`;
             this.style.top = `${randomY}px`;
         });
+
         timer = timer + 1; 
         var yesButton = document.getElementById('yes-button');
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
         var newSize = parseFloat(currentFontSize) * 1.1;
         yesButton.style.fontSize = newSize + 'px';
+
+        var noButton = document.getElementById('no-button');
+        var currentFontSize1 = window.getComputedStyle(noButton).getPropertyValue('font-size');
+        var newSize1 = parseFloat(currentFontSize1) / 1.1;
+        noButton.style.fontSize = newSize1 + 'px';
+
+
     } else {
         alert('Invalid option!');
     }
